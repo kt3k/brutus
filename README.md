@@ -72,12 +72,27 @@ Brutus delegates the merging methods and command execution through delegate obje
 
 ### mergeCliOptionsToPkgOptions(cliOptions, pkgOptions)
 
+param      | type
+-----------|-----
+cliOptions | Object
+pkgOptions | Object
+
 Merges the user's cli options to the user's package options.
 
 ### mergePkgOptionsToCommandOptions(pkgOptions, cmdOptions)
 
+param      | type
+-----------|-----
+pkgOptions | Object
+cmdOptions | Object
+
 Merges the user's package options to the command default options.
 
 ### execute(cliOptions, cmdOptions)
+
+param      | type
+-----------|-----
+cliOptions | Object
+cmdOptions | Object
 
 Executes the command.
