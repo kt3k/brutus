@@ -1,6 +1,7 @@
 'use strict'
 
 var subclass = require('subclassjs')
+var Promise = require('es6-promise')
 
 var CommandExecutionService = require('./lib/CommandExecutionService')
 
@@ -31,10 +32,27 @@ var Brutus = subclass(function (pt) {
 
     /**
      * Executes the command as a cli
+     *
+     * @return {Promise}
      */
     pt.execAsCli = function () {
 
-        this.cmdService.executeAsCli()
+        return Promise.resolve().then(function () {
+
+            return this.cmdService.executeAsCli()
+
+        }).then(function () {
+
+            process.exit(0)
+
+        }, function (err) {
+
+            console.log(err)
+            console.log(err.stack)
+
+            process.exit(1)
+
+        })
 
     }
 
@@ -43,7 +61,7 @@ var Brutus = subclass(function (pt) {
      */
     pt.exec = function () {
 
-        this.cmdService.execute()
+        return this.cmdService.execute()
 
     }
 
