@@ -37,9 +37,11 @@ var Brutus = subclass(function (pt) {
      */
     pt.execAsCli = function () {
 
+        var self = this
+
         return Promise.resolve().then(function () {
 
-            return this.cmdService.executeAsCli()
+            return self.cmdService.executeAsCli()
 
         }).then(function (exitCode) {
 
