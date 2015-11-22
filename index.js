@@ -1,7 +1,7 @@
 'use strict'
 
 var subclass = require('subclassjs')
-var Promise = require('es6-promise')
+var Promise = require('es6-promise').Promise
 
 var CommandExecutionService = require('./lib/CommandExecutionService')
 
