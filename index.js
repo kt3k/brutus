@@ -1,6 +1,6 @@
 'use strict'
 
-var subclass = require('subclass')
+var subclass = require('subclassjs')
 
 var CommandExecutionService = require('./lib/CommandExecutionService')
 
