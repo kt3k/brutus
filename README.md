@@ -1,4 +1,4 @@
-# brutus v1.1.1 [![Build Status](https://travis-ci.org/kt3k/brutus.svg)](https://travis-ci.org/kt3k/brutus) [![codecov.io](https://codecov.io/github/kt3k/brutus/coverage.svg?branch=master)](https://codecov.io/github/kt3k/brutus?branch=master)
+# brutus v1.1.2 [![Build Status](https://travis-ci.org/kt3k/brutus.svg)](https://travis-ci.org/kt3k/brutus) [![codecov.io](https://codecov.io/github/kt3k/brutus/coverage.svg?branch=master)](https://codecov.io/github/kt3k/brutus?branch=master)
 
 > A tool for creating a cli which uses cli options and package.json options and merge them into default options
 
