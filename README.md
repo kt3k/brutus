@@ -1,4 +1,4 @@
-# brutus v1.0.0
+# brutus v1.0.0 [![Build Status](https://travis-ci.org/kt3k/brutus.svg)](https://travis-ci.org/kt3k/brutus)
 
 > A tool for creating a cli which uses cli options and package.json options and merge them into default options
 
