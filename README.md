@@ -1,4 +1,4 @@
-# brutus
+# brutus v1.0.0
 
 > A tool for creating a cli which uses cli options and package.json options and merge them into default options
 
