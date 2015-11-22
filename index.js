@@ -41,9 +41,9 @@ var Brutus = subclass(function (pt) {
 
             return this.cmdService.executeAsCli()
 
-        }).then(function () {
+        }).then(function (exitCode) {
 
-            process.exit(0)
+            process.exit(exitCode)
 
         }, function (err) {
 
