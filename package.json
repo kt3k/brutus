@@ -7,7 +7,9 @@
     "test": "test"
   },
   "scripts": {
-    "test": "mocha spec"
+    "test": "mocha spec",
+    "cover": "istanbul cover _mocha -x \"spec/**/*.js\" -- spec/",
+    "codecov": "npm run cover && codecov < coverage/lcov.info"
   },
   "repository": {
     "type": "git",
@@ -32,6 +34,8 @@
   },
   "devDependencies": {
     "chai": "^3.4.1",
+    "codecov.io": "^0.1.6",
+    "istanbul": "^0.4.0",
     "mocha": "^2.3.4"
   },
   "dummycommand": {
