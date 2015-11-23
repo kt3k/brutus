@@ -37,19 +37,6 @@ describe('CommandExecutionService', function () {
 
     })
 
-    describe('execute', function () {
-
-        it('executes the command without using cli options', function () {
-
-            var result = cmdService.execute()
-
-            expect(result.isPkgOptionsMerged).to.be.true
-            expect(result.isCliOptionsMerged).to.be.undefined
-
-        })
-
-    })
-
     describe('executeAsCli', function () {
 
         it('executes the command using cli options', function () {

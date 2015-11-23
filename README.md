@@ -37,9 +37,6 @@ var brutus = require('brutus')({
 
 })
 
-// execute (without using cli options)
-brutus.exec()
-
 // execute as a cli command (using cli options)
 brutus.execAsCli()
 ```

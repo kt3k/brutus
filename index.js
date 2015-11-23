@@ -58,15 +58,6 @@ var Brutus = subclass(function (pt) {
 
     }
 
-    /**
-     * Executes the command without using cli options.
-     */
-    pt.exec = function () {
-
-        return this.cmdService.execute()
-
-    }
-
 })
 
 module.exports = Brutus
