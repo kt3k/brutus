@@ -76,6 +76,8 @@ pkgOptions | Object
 
 Merges the user's cli options to the user's package options.
 
+cliOptions is the parsed argv using `minimist` (i.e. `require('minimist')(process.argv.slice(2))` )
+
 ### mergePkgOptionsToCommandOptions(pkgOptions, cmdOptions)
 
 param      | type
@@ -92,4 +94,6 @@ param      | type
 cliOptions | Object
 cmdOptions | Object
 
-Executes the command.
+Executes the command with cli and command options. The return value of execute becomes the exit code of the cli.
+
+`cmdOptions` include information merged from the user's cli options and the user's package options using the above 2 methods.
