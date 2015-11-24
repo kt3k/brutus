@@ -87,6 +87,21 @@ cmdOptions | Object
 
 Merges the user's package options to the command default options.
 
+`pkgOptions` are the part of the user's package.json of the key of your command name.
+
+For example, your cmdName is `snowball` and the user's package.json is like the below:
+
+```json
+{
+    "name": "my-package",
+    "snowball": {
+        "foo": "bar"
+    }
+}
+```
+
+Then the pkgOptions are `{foo: "bar"}`. This is useful when you make your command's behaviour configurable by the user's package.json.
+
 ### execute(cliOptions, cmdOptions)
 
 param      | type
