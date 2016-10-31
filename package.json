@@ -28,7 +28,7 @@
   },
   "homepage": "https://github.com/kt3k/brutus#readme",
   "dependencies": {
-    "es6-promise": "^3.0.2",
+    "es6-promise": "^4.0.5",
     "minimist": "^1.2.0",
     "pkg-config": "^1.1.0",
     "subclassjs": "^1.3.0"
@@ -37,7 +37,7 @@
     "chai": "^3.4.1",
     "codecov.io": "^0.1.6",
     "istanbul": "^0.4.0",
-    "mocha": "^2.3.4"
+    "mocha": "^3.1.2"
   },
   "dummycommand": {
     "foo": "bar"
